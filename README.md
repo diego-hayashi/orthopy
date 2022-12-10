@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://github.com/nschloe/orthopy"><img alt="orthopy" src="https://nschloe.github.io/orthopy/orthopy-logo-with-text.png" width="30%"></a>
+  <a href="https://github.com/nschloe/orthopy"><img alt="orthopy" src="figs/orthopy-logo-with-text.png" width="30%"></a>
   <p align="center">All about orthogonal polynomials.</p>
 </p>
 
@@ -98,7 +98,7 @@ than the previous, and similarly for multivariate families. See the tree plots b
 
 ### Line segment (-1, +1) with weight function (1-x)<sup>α</sup> (1+x)<sup>β</sup>
 
-<img src="https://nschloe.github.io/orthopy/legendre.svg" width="100%"> | <img src="https://nschloe.github.io/orthopy/chebyshev1.svg" width="100%"> | <img src="https://nschloe.github.io/orthopy/chebyshev2.svg" width="100%">
+<img src="figs/legendre.svg" width="100%"> | <img src="figs/chebyshev1.svg" width="100%"> | <img src="figs/chebyshev2.svg" width="100%">
 :-------------------:|:------------------:|:-------------:|
 Legendre             |  Chebyshev 1       |  Chebyshev 2  |
 
@@ -146,7 +146,7 @@ for k in range(5):
 
 
 ### 1D half-space with weight function x<sup>α</sup> exp(-r)
-<img src="https://nschloe.github.io/orthopy/e1r.svg" width="45%">
+<img src="figs/e1r.svg" width="45%">
 
 (Generalized) Laguerre polynomials.
 <!--pytest-codeblocks:skip-->
@@ -155,7 +155,7 @@ evaluator = orthopy.e1r.Eval(x, alpha=0, scaling="normal")
 ```
 
 ### 1D space with weight function exp(-r<sup>2</sup>)
-<img src="https://nschloe.github.io/orthopy/e1r2.svg" width="45%">
+<img src="figs/e1r2.svg" width="45%">
 
 Hermite polynomials come in two standardizations:
 
@@ -172,7 +172,7 @@ evaluator = orthopy.e1r2.Eval(
 ```
 
 #### Associated Legendre "polynomials"
-<img src="https://nschloe.github.io/orthopy/associated-legendre.svg" width="45%">
+<img src="figs/associated-legendre.svg" width="45%">
 
 Not all of those are polynomials, so they should really be called associated Legendre
 _functions_. The <i>k</i>th iteration contains _2k+1_ functions, indexed from
@@ -185,7 +185,7 @@ evaluator = orthopy.c1.associated_legendre.Eval(
 ```
 
 ### Triangle (_T<sub>2</sub>_)
-<img src="https://nschloe.github.io/orthopy/triangle-tree.png" width="40%">
+<img src="figs/triangle-tree.png" width="40%">
 
 orthopy's triangle orthogonal polynomials are evaluated in terms of [barycentric
 coordinates](https://en.wikipedia.org/wiki/Barycentric_coordinate_system), so the
@@ -201,7 +201,7 @@ evaluator = orthopy.t2.Eval(bary, "normal")
 
 ### Disk (_S<sub>2</sub>_)
 
-<img src="https://nschloe.github.io/orthopy/disk-xu-tree.png" width="70%"> | <img src="https://nschloe.github.io/orthopy/disk-zernike-tree.png" width="70%"> | <img src="https://nschloe.github.io/orthopy/disk-zernike2-tree.png" width="70%">
+<img src="figs/disk-xu-tree.png" width="70%"> | <img src="figs/disk-zernike-tree.png" width="70%"> | <img src="figs/disk-zernike2-tree.png" width="70%">
 :------------:|:-----------------:|:-----------:|
 Xu            |  [Zernike](https://en.wikipedia.org/wiki/Zernike_polynomials)          |  Zernike 2  |
 
@@ -223,7 +223,7 @@ evaluator = orthopy.s2.xu.Eval(x, "normal")
 
 ### Sphere (_U<sub>3</sub>_)
 
-<img src="https://nschloe.github.io/orthopy/sph-tree.png" width="50%">
+<img src="figs/sph-tree.png" width="50%">
 
 Complex-valued _spherical harmonics,_ plotted with
 [cplot](https://github.com/nschloe/cplot/) coloring (black=zero, green=real positive,
@@ -253,7 +253,7 @@ turn off _Map Scalars_.
 
 ### _n_-Cube (_C<sub>n</sub>_)
 
-<img src="https://nschloe.github.io/orthopy/c1.svg" width="100%"> | <img src="https://nschloe.github.io/orthopy/c2.png" width="100%"> | <img src="https://nschloe.github.io/orthopy/c3.png" width="100%">
+<img src="figs/c1.svg" width="100%"> | <img src="figs/c2.png" width="100%"> | <img src="figs/c3.png" width="100%">
 :-------------------------:|:------------------:|:---------------:|
 C<sub>1</sub> (Legendre)   |  C<sub>2</sub>     |  C<sub>3</sub>  |
 
@@ -269,7 +269,7 @@ values, degrees = next(evaluator)
 
 ### <i>n</i>D space with weight function exp(-r<sup>2</sup>) (_E<sub>n</sub><sup>r<sup>2</sup></sup>_)
 
-<img src="https://nschloe.github.io/orthopy/e1r2.svg" width="100%"> | <img src="https://nschloe.github.io/orthopy/e2r2.png" width="100%"> | <img src="https://nschloe.github.io/orthopy/e3r2.png" width="100%">
+<img src="figs/e1r2.svg" width="100%"> | <img src="figs/e2r2.png" width="100%"> | <img src="figs/e3r2.png" width="100%">
 :-------------------------:|:------------------:|:---------------:|
 _E<sub>1</sub><sup>r<sup>2</sup></sup>_   |  _E<sub>2</sub><sup>r<sup>2</sup></sup>_     | _E<sub>3</sub><sup>r<sup>2</sup></sup>_  |
 
